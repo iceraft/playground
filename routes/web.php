@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/test', 'testController@test')->name('homeTest');
+Route::get('/posTest', 'testController@posTest')->name('posTest');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
